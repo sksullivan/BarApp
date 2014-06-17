@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E528CCB2194F7BF50025DF3A /* BAStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528CCB1194F7BF50025DF3A /* BAStore.swift */; };
+		E528CCB4194F7E090025DF3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E528CCB3194F7E090025DF3A /* Foundation.framework */; };
+		E528CCB6194F93760025DF3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E528CCB5194F93760025DF3A /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E528CCB8194FA3300025DF3A /* BACartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528CCB7194FA3300025DF3A /* BACartVC.swift */; };
+		E572F01E19478D5200882704 /* BAListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F01D19478D5200882704 /* BAListVC.swift */; };
+		E572F020194793F200882704 /* BASlideSegueLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F01F194793F200882704 /* BASlideSegueLeft.swift */; };
+		E572F02219479AC500882704 /* BASlideSegueRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F02119479AC500882704 /* BASlideSegueRight.swift */; };
 		E58B0BEC1943CC3F00CF11F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */; };
-		E58B0BEE1943CC3F00CF11F0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BED1943CC3F00CF11F0 /* FirstViewController.swift */; };
-		E58B0BF01943CC3F00CF11F0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BEF1943CC3F00CF11F0 /* SecondViewController.swift */; };
+		E58B0BEE1943CC3F00CF11F0 /* BA2UpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BED1943CC3F00CF11F0 /* BA2UpVC.swift */; };
+		E58B0BF01943CC3F00CF11F0 /* BA4UpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BEF1943CC3F00CF11F0 /* BA4UpVC.swift */; };
 		E58B0BF31943CC3F00CF11F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58B0BF11943CC3F00CF11F0 /* Main.storyboard */; };
 		E58B0BF51943CC3F00CF11F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58B0BF41943CC3F00CF11F0 /* Images.xcassets */; };
 		E58B0C011943CC4000CF11F0 /* BarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0C001943CC4000CF11F0 /* BarAppTests.swift */; };
+		E58B0C0B1944DCE300CF11F0 /* BALoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0C0A1944DCE300CF11F0 /* BALoginVC.swift */; };
+		E58B0C0D194634CA00CF11F0 /* BAUtilREST.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0C0C194634CA00CF11F0 /* BAUtilREST.swift */; };
+		E595D1B4194FAC3F003D5BA4 /* BASlideSegueDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595D1B3194FAC3F003D5BA4 /* BASlideSegueDown.swift */; };
+		E59E6E561947B16400EB0766 /* BADrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59E6E551947B16400EB0766 /* BADrink.swift */; };
+		E5FB14A5195095BA00A9A68B /* BASlideSegueUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB14A4195095BA00A9A68B /* BASlideSegueUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +38,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E528CCB1194F7BF50025DF3A /* BAStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAStore.swift; sourceTree = "<group>"; };
+		E528CCB3194F7E090025DF3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E528CCB5194F93760025DF3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E528CCB7194FA3300025DF3A /* BACartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACartVC.swift; sourceTree = "<group>"; };
+		E572F01D19478D5200882704 /* BAListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAListVC.swift; sourceTree = "<group>"; };
+		E572F01F194793F200882704 /* BASlideSegueLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BASlideSegueLeft.swift; sourceTree = "<group>"; };
+		E572F02119479AC500882704 /* BASlideSegueRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BASlideSegueRight.swift; sourceTree = "<group>"; };
 		E58B0BE61943CC3F00CF11F0 /* BarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58B0BEA1943CC3F00CF11F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E58B0BED1943CC3F00CF11F0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E58B0BEF1943CC3F00CF11F0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E58B0BED1943CC3F00CF11F0 /* BA2UpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BA2UpVC.swift; sourceTree = "<group>"; };
+		E58B0BEF1943CC3F00CF11F0 /* BA4UpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BA4UpVC.swift; sourceTree = "<group>"; };
 		E58B0BF21943CC3F00CF11F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E58B0BF41943CC3F00CF11F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E58B0BFA1943CC4000CF11F0 /* BarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58B0BFF1943CC4000CF11F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58B0C001943CC4000CF11F0 /* BarAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarAppTests.swift; sourceTree = "<group>"; };
+		E58B0C0A1944DCE300CF11F0 /* BALoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BALoginVC.swift; sourceTree = "<group>"; };
+		E58B0C0C194634CA00CF11F0 /* BAUtilREST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAUtilREST.swift; sourceTree = "<group>"; };
+		E595D1B3194FAC3F003D5BA4 /* BASlideSegueDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BASlideSegueDown.swift; sourceTree = "<group>"; };
+		E59E6E551947B16400EB0766 /* BADrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BADrink.swift; sourceTree = "<group>"; };
+		E5FB14A4195095BA00A9A68B /* BASlideSegueUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BASlideSegueUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E528CCB6194F93760025DF3A /* UIKit.framework in Frameworks */,
+				E528CCB4194F7E090025DF3A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +85,8 @@
 		E58B0BDD1943CC3F00CF11F0 = {
 			isa = PBXGroup;
 			children = (
+				E528CCB5194F93760025DF3A /* UIKit.framework */,
+				E528CCB3194F7E090025DF3A /* Foundation.framework */,
 				E58B0BE81943CC3F00CF11F0 /* BarApp */,
 				E58B0BFD1943CC4000CF11F0 /* BarAppTests */,
 				E58B0BE71943CC3F00CF11F0 /* Products */,
@@ -77,9 +105,10 @@
 		E58B0BE81943CC3F00CF11F0 /* BarApp */ = {
 			isa = PBXGroup;
 			children = (
+				E595D1B7194FAC63003D5BA4 /* Custom Segues */,
+				E595D1B6194FAC55003D5BA4 /* Utilities */,
+				E595D1B5194FAC46003D5BA4 /* VCs */,
 				E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */,
-				E58B0BED1943CC3F00CF11F0 /* FirstViewController.swift */,
-				E58B0BEF1943CC3F00CF11F0 /* SecondViewController.swift */,
 				E58B0BF11943CC3F00CF11F0 /* Main.storyboard */,
 				E58B0BF41943CC3F00CF11F0 /* Images.xcassets */,
 				E58B0BE91943CC3F00CF11F0 /* Supporting Files */,
@@ -110,6 +139,39 @@
 				E58B0BFF1943CC4000CF11F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E595D1B5194FAC46003D5BA4 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				E528CCB7194FA3300025DF3A /* BACartVC.swift */,
+				E58B0C0A1944DCE300CF11F0 /* BALoginVC.swift */,
+				E58B0BED1943CC3F00CF11F0 /* BA2UpVC.swift */,
+				E58B0BEF1943CC3F00CF11F0 /* BA4UpVC.swift */,
+				E572F01D19478D5200882704 /* BAListVC.swift */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+		E595D1B6194FAC55003D5BA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E58B0C0C194634CA00CF11F0 /* BAUtilREST.swift */,
+				E528CCB1194F7BF50025DF3A /* BAStore.swift */,
+				E59E6E551947B16400EB0766 /* BADrink.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E595D1B7194FAC63003D5BA4 /* Custom Segues */ = {
+			isa = PBXGroup;
+			children = (
+				E572F01F194793F200882704 /* BASlideSegueLeft.swift */,
+				E572F02119479AC500882704 /* BASlideSegueRight.swift */,
+				E595D1B3194FAC3F003D5BA4 /* BASlideSegueDown.swift */,
+				E5FB14A4195095BA00A9A68B /* BASlideSegueUp.swift */,
+			);
+			name = "Custom Segues";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +223,7 @@
 				TargetAttributes = {
 					E58B0BE51943CC3F00CF11F0 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = FP48EUQHLU;
 					};
 					E58B0BF91943CC4000CF11F0 = {
 						CreatedOnToolsVersion = 6.0;
@@ -211,9 +274,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58B0BF01943CC3F00CF11F0 /* SecondViewController.swift in Sources */,
+				E528CCB2194F7BF50025DF3A /* BAStore.swift in Sources */,
+				E58B0C0D194634CA00CF11F0 /* BAUtilREST.swift in Sources */,
+				E572F01E19478D5200882704 /* BAListVC.swift in Sources */,
+				E58B0BF01943CC3F00CF11F0 /* BA4UpVC.swift in Sources */,
+				E59E6E561947B16400EB0766 /* BADrink.swift in Sources */,
+				E58B0C0B1944DCE300CF11F0 /* BALoginVC.swift in Sources */,
+				E572F020194793F200882704 /* BASlideSegueLeft.swift in Sources */,
+				E572F02219479AC500882704 /* BASlideSegueRight.swift in Sources */,
 				E58B0BEC1943CC3F00CF11F0 /* AppDelegate.swift in Sources */,
-				E58B0BEE1943CC3F00CF11F0 /* FirstViewController.swift in Sources */,
+				E58B0BEE1943CC3F00CF11F0 /* BA2UpVC.swift in Sources */,
+				E5FB14A5195095BA00A9A68B /* BASlideSegueUp.swift in Sources */,
+				E528CCB8194FA3300025DF3A /* BACartVC.swift in Sources */,
+				E595D1B4194FAC3F003D5BA4 /* BASlideSegueDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -340,7 +415,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -401,6 +478,7 @@
 				E58B0C061943CC4000CF11F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E58B0C071943CC4000CF11F0 /* Build configuration list for PBXNativeTarget "BarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +487,7 @@
 				E58B0C091943CC4000CF11F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
