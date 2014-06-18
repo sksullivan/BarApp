@@ -10,7 +10,6 @@ import UIKit
 
 class BASlideSegueDown: UIStoryboardSegue {
     override func perform() {
-        println("GOING")
         let sVC: UIViewController = self.sourceViewController as UIViewController
         let dVC: UIViewController = self.destinationViewController as UIViewController
         let sourceFrame = sVC.view.frame

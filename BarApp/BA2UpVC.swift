@@ -10,25 +10,32 @@ import UIKit
 
 class BA2UpViewController: UIViewController {
     
+    @IBOutlet var navItem: UINavigationItem
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "More", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showMoreDrinks"))
+        var items: Array<UIBarButtonItem> = []
+        let item = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showMenu"))
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        items.append(spacer)
+        items.append(item)
+        items.append(spacer)
+        setToolbarItems(items, animated: false)
+        navigationController.setToolbarHidden(false, animated: false)
+        navigationController.navigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        let gestureRecognizer = sender as UISwipeGestureRecognizer
-        println(gestureRecognizer.direction.value)
-        if gestureRecognizer.direction.value == 1 {
-            let target = segue.destinationViewController as BA4UpViewController
-            target.type = BA4UpViewController.VCType.Left
-        } else if gestureRecognizer.direction.value == 2 {
-            let target = segue.destinationViewController as BA4UpViewController
-            target.type = BA4UpViewController.VCType.Right
-        }
+    func showMoreDrinks() {
+       navigationController.pushViewController(storyboard.instantiateViewControllerWithIdentifier("BA4UpVC") as UIViewController, animated: true)
+    }
+    
+    func showMenu() {
+        navigationController.pushViewController(storyboard.instantiateViewControllerWithIdentifier("BACartVC") as UIViewController, animated: true)
     }
 }
 

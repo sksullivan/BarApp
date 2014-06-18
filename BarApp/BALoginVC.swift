@@ -54,6 +54,8 @@ class BALoginViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad () {
         println("LOADED")
+        navigationController.setToolbarHidden(true, animated: false)
+        navigationController.navigationBarHidden = true
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

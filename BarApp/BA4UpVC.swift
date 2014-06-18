@@ -15,37 +15,26 @@ class BA4UpViewController: UIViewController {
     @IBOutlet var blButton: UIButton?
     @IBOutlet var brButton: UIButton?
     
-    enum VCType {
-        case Left
-        case Right
-    }
-    var type: VCType?
-    
-    @IBAction func doSegue(sender: AnyObject?) {
-        let sendingGR = sender as? UISwipeGestureRecognizer
-        if type == VCType.Left && sender!.direction.value == 2 {
-            performSegueWithIdentifier("4to2Left", sender: sender)
-        } else if type == VCType.Left && sender!.direction.value == 1 {
-            performSegueWithIdentifier("4toLRight", sender: sender)
-        } else if type == VCType.Right && sender!.direction.value == 2 {
-            performSegueWithIdentifier("4toLLeft", sender: sender)
-        } else {
-            performSegueWithIdentifier("4to2Right", sender: sender)
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if type! == VCType.Left {
-            tlButton!.setTitle("Left!", forState: UIControlState.Normal)
-        } else {
-            tlButton!.setTitle("Right!", forState: UIControlState.Normal)
-        }
+        var items: Array<UIBarButtonItem> = []
+        let item = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showMenu"))
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        items.append(spacer)
+        items.append(item)
+        items.append(spacer)
+        setToolbarItems(items, animated: false)
+        navigationController.setToolbarHidden(false, animated: false)
+        navigationController.navigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func showMenu() {
+        navigationController.pushViewController(storyboard.instantiateViewControllerWithIdentifier("BACartVC") as UIViewController, animated: true)
     }
 }
 

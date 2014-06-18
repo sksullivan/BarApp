@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate, UIAlertViewDelegate {
+class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UIAlertViewDelegate {
     
     var drinksArray: BADrink[]
     var filteredDrinksArray: BADrink[]
@@ -28,21 +28,24 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     override func viewDidLoad() {
-        //(searchBar.valueForKey("_searchField") as UITextField).textColor = UIColor.whiteColor()
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        let gestureRecognizer = sender as UISwipeGestureRecognizer
-        let target = segue.destinationViewController as BA4UpViewController
-        if gestureRecognizer.direction.value == 1 {
-            target.type = BA4UpViewController.VCType.Right
-        } else {
-            target.type = BA4UpViewController.VCType.Left
-        }
+        var items: Array<UIBarButtonItem> = []
+        let item = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showMenu"))
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        items.append(spacer)
+        items.append(item)
+        items.append(spacer)
+        setToolbarItems(items, animated: false)
+        navigationController.setToolbarHidden(false, animated: false)
+        navigationController.navigationBarHidden = false
     }
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        return filteredDrinksArray.count < drinksArray.count ? filteredDrinksArray.count : drinksArray.count // Doesn't show array fo all drinks when table loads
+        println(searching ? "counting search =  true" : "counting search =  false")
+        if searching {
+            return filteredDrinksArray.count
+        } else {
+            return drinksArray.count
+        }
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
@@ -62,8 +65,6 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
             drink = drinksArray[indexPath.row]
         }
         cell!.textLabel.text = drink.name
-        cell!.backgroundColor = UIColor(red: 93/255.0, green: 62/255.0, blue: 26/255.0, alpha: 1.0)
-        cell!.textColor = UIColor.whiteColor()
         return cell
     }
     
@@ -98,19 +99,13 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func searchBar(theSearchBar: UISearchBar, textDidChange searchText: String) {
+        println("shit changed \(searchText)")
+        if searchText == "" {
+            searching = false
+        } else {
+            searching = true
+        }
         filterContentForSearchText(searchText)
-        tableView.reloadData()
-    }
-    
-    func searchDisplayController(controller: UISearchDisplayController, willShowSearchResultsTableView tableView: UITableView) {
-        println("SHOWING")
-        searching = true
-        tableView.reloadData()
-    }
-    
-    func searchDisplayController(controller: UISearchDisplayController, willHideSearchResultsTableView tableView: UITableView) {
-        println("HIDING")
-        searching = false
         tableView.reloadData()
     }
     
@@ -144,5 +139,9 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
             alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
+    }
+    
+    func showMenu() {
+        navigationController.pushViewController(storyboard.instantiateViewControllerWithIdentifier("BACartVC") as UIViewController, animated: true)
     }
 }
