@@ -17,3 +17,13 @@ class BADrink {
         self.price = price
     }
 }
+
+class BABar {
+    var name: String
+    var locationString: String
+    
+    init(name: String, loc: String) {
+        self.name = name
+        self.locationString = loc
+    }
+}
