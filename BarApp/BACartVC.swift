@@ -62,22 +62,11 @@ class BACartViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func showConfirm() {
-        var device : UIDevice = UIDevice.currentDevice()!;
-        var systemVersion = device.systemVersion;
-        var iosVersion : Float = systemVersion.bridgeToObjectiveC().floatValue;
-        println(iosVersion)
-        if (iosVersion < 8.0) {
-            let alert = UIAlertView()
-            alert.title = "Place order?"
-            alert.addButtonWithTitle("OK")
-            alert.addButtonWithTitle("Cancel")
-            alert.delegate = self
-            alert.show()
-        } else {
-            let alert = UIAlertController(title: "Place order?", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
+        let alert = UIAlertView()
+        alert.title = "Place order?"
+        alert.addButtonWithTitle("OK")
+        alert.addButtonWithTitle("Cancel")
+        alert.delegate = self
+        alert.show()
     }
 }

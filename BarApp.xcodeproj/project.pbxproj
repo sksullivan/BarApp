@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		E5052F86196211A3005E9CD7 /* BABarSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5052F85196211A3005E9CD7 /* BABarSelectVC.swift */; };
 		E50790EA19520B53007A82DC /* BAProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50790E919520B53007A82DC /* BAProfileVC.swift */; };
+		E5273343196336AC0050C3D6 /* BA2UpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BED1943CC3F00CF11F0 /* BA2UpVC.swift */; };
+		E527334519634C950050C3D6 /* BAAddCCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E527334419634C950050C3D6 /* BAAddCCVC.swift */; };
 		E528CCB2194F7BF50025DF3A /* BAStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528CCB1194F7BF50025DF3A /* BAStore.swift */; };
-		E528CCB4194F7E090025DF3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E528CCB3194F7E090025DF3A /* Foundation.framework */; };
-		E528CCB6194F93760025DF3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E528CCB5194F93760025DF3A /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E528CCB8194FA3300025DF3A /* BACartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528CCB7194FA3300025DF3A /* BACartVC.swift */; };
 		E572F01E19478D5200882704 /* BAListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F01D19478D5200882704 /* BAListVC.swift */; };
 		E572F020194793F200882704 /* BASlideSegueLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F01F194793F200882704 /* BASlideSegueLeft.swift */; };
 		E572F02219479AC500882704 /* BASlideSegueRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F02119479AC500882704 /* BASlideSegueRight.swift */; };
 		E58B0BEC1943CC3F00CF11F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */; };
-		E58B0BEE1943CC3F00CF11F0 /* BA2UpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BED1943CC3F00CF11F0 /* BA2UpVC.swift */; };
 		E58B0BF01943CC3F00CF11F0 /* BA4UpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B0BEF1943CC3F00CF11F0 /* BA4UpVC.swift */; };
 		E58B0BF31943CC3F00CF11F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58B0BF11943CC3F00CF11F0 /* Main.storyboard */; };
 		E58B0BF51943CC3F00CF11F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58B0BF41943CC3F00CF11F0 /* Images.xcassets */; };
@@ -43,9 +42,8 @@
 /* Begin PBXFileReference section */
 		E5052F85196211A3005E9CD7 /* BABarSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BABarSelectVC.swift; sourceTree = "<group>"; };
 		E50790E919520B53007A82DC /* BAProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAProfileVC.swift; sourceTree = "<group>"; };
+		E527334419634C950050C3D6 /* BAAddCCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAAddCCVC.swift; sourceTree = "<group>"; };
 		E528CCB1194F7BF50025DF3A /* BAStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAStore.swift; sourceTree = "<group>"; };
-		E528CCB3194F7E090025DF3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E528CCB5194F93760025DF3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E528CCB7194FA3300025DF3A /* BACartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACartVC.swift; sourceTree = "<group>"; };
 		E572F01D19478D5200882704 /* BAListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAListVC.swift; sourceTree = "<group>"; };
 		E572F01F194793F200882704 /* BASlideSegueLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BASlideSegueLeft.swift; sourceTree = "<group>"; };
@@ -73,8 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E528CCB6194F93760025DF3A /* UIKit.framework in Frameworks */,
-				E528CCB4194F7E090025DF3A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +87,6 @@
 		E58B0BDD1943CC3F00CF11F0 = {
 			isa = PBXGroup;
 			children = (
-				E528CCB5194F93760025DF3A /* UIKit.framework */,
-				E528CCB3194F7E090025DF3A /* Foundation.framework */,
 				E58B0BE81943CC3F00CF11F0 /* BarApp */,
 				E58B0BFD1943CC4000CF11F0 /* BarAppTests */,
 				E58B0BE71943CC3F00CF11F0 /* Products */,
@@ -111,11 +105,11 @@
 		E58B0BE81943CC3F00CF11F0 /* BarApp */ = {
 			isa = PBXGroup;
 			children = (
+				E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */,
+				E5B9A15C195115DC00AEC19B /* BANC.swift */,
 				E595D1B7194FAC63003D5BA4 /* Custom Segues */,
 				E595D1B6194FAC55003D5BA4 /* Utilities */,
 				E595D1B5194FAC46003D5BA4 /* VCs */,
-				E58B0BEB1943CC3F00CF11F0 /* AppDelegate.swift */,
-				E5B9A15C195115DC00AEC19B /* BANC.swift */,
 				E58B0BF41943CC3F00CF11F0 /* Images.xcassets */,
 				E58B0BE91943CC3F00CF11F0 /* Supporting Files */,
 			);
@@ -158,6 +152,7 @@
 				E572F01D19478D5200882704 /* BAListVC.swift */,
 				E50790E919520B53007A82DC /* BAProfileVC.swift */,
 				E5052F85196211A3005E9CD7 /* BABarSelectVC.swift */,
+				E527334419634C950050C3D6 /* BAAddCCVC.swift */,
 			);
 			name = VCs;
 			sourceTree = "<group>";
@@ -294,8 +289,9 @@
 				E50790EA19520B53007A82DC /* BAProfileVC.swift in Sources */,
 				E572F020194793F200882704 /* BASlideSegueLeft.swift in Sources */,
 				E572F02219479AC500882704 /* BASlideSegueRight.swift in Sources */,
+				E527334519634C950050C3D6 /* BAAddCCVC.swift in Sources */,
+				E5273343196336AC0050C3D6 /* BA2UpVC.swift in Sources */,
 				E58B0BEC1943CC3F00CF11F0 /* AppDelegate.swift in Sources */,
-				E58B0BEE1943CC3F00CF11F0 /* BA2UpVC.swift in Sources */,
 				E5FB14A5195095BA00A9A68B /* BASlideSegueUp.swift in Sources */,
 				E528CCB8194FA3300025DF3A /* BACartVC.swift in Sources */,
 				E595D1B4194FAC3F003D5BA4 /* BASlideSegueDown.swift in Sources */,

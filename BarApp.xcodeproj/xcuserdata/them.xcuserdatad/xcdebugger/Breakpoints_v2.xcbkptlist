@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarApp/BA2UpVC.swift"
-            timestampString = "424806265.57169"
+            timestampString = "427846922.931875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "showMoreDrinks()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarApp/BAListVC.swift"
-            timestampString = "424806265.57169"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,12 +41,12 @@
                   symbolName = "BarApp.BAProfileViewController.alertView (BarApp.BAProfileViewController)(ObjectiveC.UIAlertView, clickedButtonAtIndex : Swift.Int) -&gt; ()"
                   moduleName = "BarApp"
                   urlString = "file:///Users/them/Development/git/BarApp/BarApp/BAProfileVC.swift"
-                  timestampString = "425921211.92637"
+                  timestampString = "427869935.769013"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "137"
                   endingLineNumber = "137"
-                  offsetFromSymbolStart = "20668">
+                  offsetFromSymbolStart = "20548">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -71,12 +55,12 @@
                   symbolName = "BarApp.BAProfileViewController.alertView (BarApp.BAProfileViewController)(ObjectiveC.UIAlertView, clickedButtonAtIndex : Swift.Int) -&gt; ()"
                   moduleName = "BarApp"
                   urlString = "file:///Users/them/Development/git/BarApp/BarApp/BAProfileVC.swift"
-                  timestampString = "425921211.926764"
+                  timestampString = "427869935.770981"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "137"
                   endingLineNumber = "137"
-                  offsetFromSymbolStart = "30624">
+                  offsetFromSymbolStart = "30348">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -87,28 +71,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BarApp/BALoginVC.swift"
-            timestampString = "425861675.982286"
+            filePath = "BarApp/BABarSelectVC.swift"
+            timestampString = "425937532.724119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "login()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BarApp/BALoginVC.swift"
-            timestampString = "425862427.133518"
+            timestampString = "427846292.647351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "login()"
             landmarkType = "5">
          </BreakpointContent>

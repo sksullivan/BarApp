@@ -27,3 +27,16 @@ class BABar {
         self.locationString = loc
     }
 }
+
+var apiroot = "http://api.barific.com/"
+
+class BAAPIPath {
+    
+    class func login() -> String {
+        return "\(apiroot)users/login"
+    }
+    
+    class func logout() -> String {
+        return "\(apiroot)users/logout"
+    }
+}

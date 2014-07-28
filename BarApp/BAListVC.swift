@@ -10,8 +10,8 @@ import UIKit
 
 class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UIAlertViewDelegate {
     
-    var drinksArray: BADrink[]
-    var filteredDrinksArray: BADrink[]
+    var drinksArray: [BADrink]
+    var filteredDrinksArray: [BADrink]
     var selectedDrink: BADrink!
     @IBOutlet var tableView: UITableView
     @IBOutlet var searchBar: UISearchBar
@@ -19,11 +19,8 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     init(coder aDecoder: NSCoder!)  {
         searching = false
-        let martini = BADrink(name: "Martini", price: 16.00)
-        let cosmo = BADrink(name: "Cosmo", price: 32.00)
-        let longIsland = BADrink(name: "Long Island", price: 8.00)
-        drinksArray = [martini, cosmo, longIsland]
-        filteredDrinksArray = BADrink[]()
+        drinksArray = (UIApplication.sharedApplication().delegate as AppDelegate).store!.drinksList
+        filteredDrinksArray = [BADrink]()
         super.init(coder: aDecoder)
     }
     
@@ -49,7 +46,6 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        println(indexPath.row)
         let simpleTableIdentifier = "simpleTableItem";
         var cell = tableView.dequeueReusableCellWithIdentifier(simpleTableIdentifier) as? UITableViewCell
         if cell == nil {
@@ -76,11 +72,11 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if a == "" || b == "" || b.length > a.length {
             return false
         }
-        for i in 0 .. a.length {
+        for i in 0 ..< a.length {
             if b.characterAtIndex(0) == a.characterAtIndex(i) {
                 localContained = true
                 let index = i
-                for j in i .. i+b.length {
+                for j in i ..< i+b.length {
                     if j >= a.length || b.characterAtIndex(j-index) != a.characterAtIndex(j) {
                         localContained = false;
                     }
@@ -122,23 +118,12 @@ class BAListViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             selectedDrink = drinksArray[indexPath.row]
         }
-        var device : UIDevice = UIDevice.currentDevice()!;
-        var systemVersion = device.systemVersion;
-        var iosVersion : Float = systemVersion.bridgeToObjectiveC().floatValue;
-        println(iosVersion)
-        if (iosVersion < 8.0) {
-            let alert = UIAlertView()
-            alert.title = "Add \(selectedDrink.name) to cart?"
-            alert.addButtonWithTitle("OK")
-            alert.addButtonWithTitle("Cancel")
-            alert.delegate = self
-            alert.show()
-        } else {
-            let alert = UIAlertController(title: "Add \(selectedDrink.name) to cart?", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
+        let alert = UIAlertView()
+        alert.title = "Add \(selectedDrink.name) to cart?"
+        alert.addButtonWithTitle("OK")
+        alert.addButtonWithTitle("Cancel")
+        alert.delegate = self
+        alert.show()
     }
     
     func showMenu() {

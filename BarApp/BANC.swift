@@ -12,5 +12,6 @@ class BANavigationController: UINavigationController {
     init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
         setToolbarHidden(false, animated: false)
+        (UIApplication.sharedApplication().delegate as AppDelegate).store = BAStore()
     }
 }
